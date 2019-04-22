@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+</head>
+<body>
+<div class="layui-row">
+    <div class="layui-col-md12 layui-col-sm12 layui-col-xs12" style="background-color: #eaeaea">
+        <div class="layui-col-md6 layui-col-sm12 layui-col-xs12 layui-col-md-offset3">
+            <form class="layui-form" action="">
+            <div style="display: flex;display: -webkit-flex;flex-wrap: wrap; height: auto">
+                <div class="layui-form-item layui-col-md3 layui-col-sm12 layui-col-xs12">
+                    <label class="layui-form-label">年份</label>
+                    <div class="layui-input-block">
+                        <select name="city" lay-verify="required">
+                            <option value="">2016年</option>
+                            <option value="0">2017年</option>
+                            <option value="1">2018年</option>
+                            <option value="2">2019年</option>
+                            <option value="3">2020年</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-col-md3 layui-col-sm12 layui-col-xs12">
+                    <label class="layui-form-label">赛事类型</label>
+                    <div class="layui-input-block">
+                        <select name="city" lay-verify="required">
+                            <option value="">全部</option>
+                            <option value="0">锦标赛</option>
+                            <option value="1">大奖赛</option>
+                            <option value="2">公开赛</option>
+                            <option value="3">精英赛</option>
+                            <option value="4">冠军赛</option>
+                            <option value="5">国际赛</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-col-md3 layui-col-sm12 layui-col-xs12">
+                    <label class="layui-form-label">报名状态</label>
+                    <div class="layui-input-block">
+                        <select name="city" lay-verify="required">
+                            <option value="">全部</option>
+                            <option value="0">可报名</option>
+                            <option value="1">已截止</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-col-md3 layui-col-sm12 layui-col-xs12">
+                    <label class="layui-form-label">赛事名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" required lay-verify="required" autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="layui-col-md12 layui-col-sm12 layui-col-xs12">
+        <div class="layui-form-item layui-col-md8 layui-col-sm12 layui-col-xs12 layui-col-md-offset2">
+            <div class="layui-col-md6 layui-col-md-offset3" style="display: flex;display: -webkit-flex;justify-content: space-between;margin-bottom: 50px">
+                <button class="layui-btn" lay-submit lay-filter="go" style="width: 40%">查询</button>
+                <button type="reset" class="layui-btn layui-btn-primary" style="width: 40%;">重置</button>
+            </div>
+            <div class="layui-col-md12 layui-col-sm12 layui-col-xs12" style="clear: both;overflow: hidden">
+                <table class="layui-table" lay-skin="line" style="border: 0;text-align: center;">
+                    <thead>
+                    <tr>
+                        <th style="text-align: center">序号</th>
+                        <th style="text-align: center">赛事名称</th>
+                        <th style="text-align: center">赛事类型</th>
+                        <th class="layui-hide-xs" style="text-align: center;">时间</th>
+                        <th class="layui-hide-xs" style="text-align: center">地点</th>
+                        <th class="layui-hide-xs" style="text-align: center">主办单位</th>
+                        <th class="layui-hide-xs" style="text-align: center">负责人</th>
+                        <th class="layui-hide-xs" style="text-align: center">联系电话</th>
+                        <th style="text-align: center">报名参赛</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>2016年CBBA中国广场舞健身赛公开赛<br>(河南站)</td>
+                        <td>公开赛</td>
+                        <td class="layui-hide-xs">2019.05.16-05.20</td>
+                        <td class="layui-hide-xs">河南省<br>郑州市</td>
+                        <td class="layui-hide-xs">中国广场舞协会</td>
+                        <td class="layui-hide-xs">刘微</td>
+                        <td class="layui-hide-xs">010-857522850</td>
+                        <td><a href="login.html">点击报名</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2016年CBBA中国广场舞健身赛公开赛<br>（兰州站）</td>
+                        <td>公开赛</td>
+                        <td class="layui-hide-xs">2019.05.16-05.20</td>
+                        <td class="layui-hide-xs">甘肃省<br>兰州市</td>
+                        <td class="layui-hide-xs">中国广场舞协会</td>
+                        <td class="layui-hide-xs">刘微</td>
+                        <td class="layui-hide-xs">010-857522850</td>
+                        <td><a href="#">报名未开始</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2016年CBBA中国广场舞健身赛公开赛<br>（云南站）</td>
+                        <td>公开赛</td>
+                        <td class="layui-hide-xs">2019.05.16-05.20</td>
+                        <td class="layui-hide-xs">云南省<br>曲靖市</td>
+                        <td class="layui-hide-xs">中国广场舞协会</td>
+                        <td class="layui-hide-xs">刘微</td>
+                        <td class="layui-hide-xs">010-857522850</td>
+                        <td><a href="#">报名已截止</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<iframe name="foot" src="foot.html" width="100%" height="300px"></iframe>
+<script type="text/javascript" src="../static/layui/layui.js"></script>
+<script>
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+
+        //监听提交
+        form.on('submit(go)', function (data) {
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+    });
+    layui.use("jquery",function () {
+        var $=layui.jquery;
+        // $(".hid").style("display","none");
+
+    });
+</script>
+</body>
+</html>

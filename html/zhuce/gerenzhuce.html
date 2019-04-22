@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zhuce</title>
+    <link rel="stylesheet" href="../../static/layui/css/layui.css">
+    <link rel="stylesheet" href="../../css/zhuce.css">
+</head>
+<body>
+<div class="layui-col-md12 layui-col-sm12 layui-col-xs12">
+    <form class="layui-form" action="">
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">姓名</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="text" name="username"  lay-verify="required" placeholder="姓名" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">性别</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="radio" name="sex" value="男" title="男">
+                <input type="radio" name="sex" value="女" title="女" checked>
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class=" layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">通讯地址</label>
+            </div>
+            <div class="layui-col-md9 layui-col-sm12 layui-col-xs12 layui-col-md-offset1">
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md3">
+                    <select id="prov" name="prov" lay-verify="required" lay-filter="prov">
+                        <option value="">请选择省份</option>
+                    </select>
+                </div>
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md3 layui-col-md-offset1">
+                    <select id="city" name="city" lay-verify="required" lay-filter="city">
+                        <option value="">请选择市</option>
+                    </select>
+                </div>
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md3 layui-col-md-offset1">
+                    <select id="country" name="country" lay-verify="required" lay-filter="country">
+                        <option value="">请选择县</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">详细地址</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="text" name="address"  lay-verify="required" placeholder="详细地址" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">身份证</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="text" name="idcard"  lay-verify="required" placeholder="证件号码" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">出生日期</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="text" class="layui-input" id="time" placeholder="出生日期" name="birthday">
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">手机号码</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="text" name="phone"  lay-verify="required" placeholder="手机号码" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">密码</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="password" name="password" lay-verify="required" placeholder="请输入密码" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">确认密码</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="password" name="agpassword" lay-verify="required" placeholder="请再次输入密码" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-input-block">
+                <button class="layui-btn layui-col-md5 layui-col-sm5 layui-col-xs5" lay-submit lay-filter="preson">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary layui-col-xs5 layui-col-sm5 layui-col-md5 layui-col-md-offset1 layui-col-sm-offset1 layui-col-xs-offset1">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="../../static/layui/layui.js"></script>
+<script src="../../static/jquery-1.8.3.min.js"></script>
+<script src="../../static/socketio/socket.io.js"></script>
+<script src="../../js/city.js"></script>
+<script src="../../js/gerenzhuce.js"></script>
+
+</body>
+</html>

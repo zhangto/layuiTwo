@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zhuce</title>
+    <link rel="stylesheet" href="../../static/layui/css/layui.css">
+</head>
+<body>
+<div class="layui-col-md12 layui-col-sm12 layui-col-xs12">
+    <form class="layui-form" action="">
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">姓名</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="text" name="username"  lay-verify="required" placeholder="姓名" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">性别</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="radio" name="sex" value="男" title="男">
+                <input type="radio" name="sex" value="女" title="女" checked>
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class=" layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">通讯地址</label>
+            </div>
+            <div class="layui-col-md9 layui-col-sm12 layui-col-xs12 layui-col-md-offset1">
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md3">
+                    <select id="prov" name="prov" lay-verify="required" lay-filter="prov">
+                        <option value="">请选择省份</option>
+                    </select>
+                </div>
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md3 layui-col-md-offset1">
+                    <select id="city" name="city" lay-verify="required" lay-filter="city">
+                        <option value="">请选择市</option>
+                    </select>
+                </div>
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md3 layui-col-md-offset1">
+                    <select id="country" name="country" lay-verify="required" lay-filter="country">
+                        <option value="">请选择县</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">详细地址</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="text" name="address"  lay-verify="required" placeholder="详细地址" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">身份证</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <input type="text" name="idcard"  lay-verify="required" placeholder="证件号码" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <label class="layui-form-label">当前等级</label>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 layui-col-md-offset1">
+                <select name="grade" lay-verify="required">
+                    <option value=""></option>
+                    <option value="0">选择级别</option>
+                    <option value="1">国际级</option>
+                    <option value="2">国家级</option>
+                    <option value="3">一级</option>
+                    <option value="4">二级</option>
+                    <option value="4">三级</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item layui-upload layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12" style="display: flex;display: -webkit-flex;align-items: center">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md2">
+                <button type="button" class="layui-btn" id="test1">头像照片</button>
+            </div>
+            <div class="layui-upload-list layui-col-xs12 layui-col-sm12 layui-col-md2 layui-col-md-offset2" style="background-color: #D0D0D0;margin: 10px">
+                <img id="demo1" style="height: 100px;" name="photo">
+            </div>
+        </div>
+        <div class="layui-form-item layui-col-md10 layui-col-sm12 layui-col-xs12">
+            <div class="layui-input-block">
+                <button class="layui-btn layui-col-md5 layui-col-sm5 layui-col-xs5" lay-submit lay-filter="referee">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary layui-col-xs5 layui-col-sm5 layui-col-md5 layui-col-md-offset1 layui-col-sm-offset1 layui-col-xs-offset1">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="../../static/layui/layui.js"></script>
+<script src="../../static/jquery-1.8.3.min.js"></script>
+<script src="../../static/socketio/socket.io.js"></script>
+<script src="../../js/city.js"></script>
+<script src="../../js/caipanzhuce.js"></script>
+</body>
+</html>

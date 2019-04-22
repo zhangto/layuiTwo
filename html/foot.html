@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>foot</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/liMarquee.css">
+</head>
+<body>
+<!--底部-->
+<div class="layui-row">
+    <div class="layui-col-md12 layui-col-sm12  layui-col-xs12 clear" style="">
+        <div class="layui-col-md8 layui-col-sm12 layui-col-xs12 layui-col-md-offset2"
+             style="height: 100px;background-color: #E6E6E6">
+            <div id="news">
+                <a href="#" style="margin-left: 100px"><img src="../images/1480500667.jpg"></a>
+                <a href="#" style="margin-left: 100px"><img src="../images/1480499643.jpg"></a>
+                <a href="#" style="margin-left: 100px"><img src="../images/1480499408.jpg"></a>
+                <a href="#" style="margin-left: 100px"><img src="../images/1480496361.jpg"></a>
+                <a href="#" style="margin-left: 100px"><img src="../images/1480496261.jpg"></a>
+            </div>
+        </div>
+        <!--链接-->
+        <div class="layui-col-md12 layui-col-sm12 layui-col-xs12" style="background-color: #0C0C0C">
+            <div class="layui-col-md8 layui-col-md-offset2">
+                <div style="margin-bottom: 10px">
+                    <div style="margin-bottom: 5px">
+                        <p style="font-size: 20px;color: #fff9ec">合作伙伴</p>
+                    </div>
+                    <div>
+                        <span class="layui-breadcrumb" lay-separator="|">
+                            <a href="#">龙材科技</a>
+                            <a href="#">戏没文化</a>
+                            <a href="#">肌肉工程</a>
+                            <a href="#">书画体育</a>
+                            <a href="#">上海生正</a>
+                            <a href="#">康比特</a>
+                        </span>
+                    </div>
+                </div>
+                <div style="margin-bottom: 10px">
+                    <div style="margin-bottom: 5px">
+                        <p style="font-size: 20px;color: #fff9ec">会员单位</p>
+                    </div>
+                    <div>
+                        <span class="layui-breadcrumb" lay-separator="|">
+                            <a href="">昆明市广场舞协会</a>
+                            <a href="">广州市广场舞协会</a>
+                            <a href="">辽宁省广场舞协会</a>
+                            <a href="">吉林省广场舞协会</a>
+                            <a href="">深圳市广场舞协会</a>
+                            <a href="">广西省广场舞协会</a>
+                            <a href="">安徽省广场舞协会</a>
+                            <a href="">江苏省广场舞协会</a>
+                            <a href="">江西省广场舞协会</a>
+                            <a href="">黑龙江省广场舞协会</a>
+                            <a href="">北京省广场舞协会</a>
+                            <a href="">更多</a>
+                        </span>
+                    </div>
+                </div>
+                <div style="margin-bottom: 10px">
+                    <div style="margin-bottom: 5px">
+                        <p style="font-size: 20px;color: #fff9ec">支持媒体</p>
+                    </div>
+                    <div>
+                        <span class="layui-breadcrumb" lay-separator="|">
+                            <a href="">新华社</a>
+                            <a href="">人民日报</a>
+                            <a href="">中央电视台</a>
+                            <a href="">中国体育报</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../static/layui/layui.js"></script>
+<script type="text/javascript" src="../static/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../static/jquery.liMarquee.js"></script>
+<script>
+    layui.use('element', function () {
+        var element = layui.element;
+    });
+    //滚动条
+    layui.use("jquery",function () {
+        var $=layui.jquery;
+        $(function () {
+            $("#news").liMarquee();
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zhuce</title>
+    <link rel="stylesheet" href="../../static/layui/css/layui.css">
+</head>
+<body>
+<div class="layui-row">
+    <div class="layui-col-md8 layui-col-sm12 layui-col-xs12 layui-col-md-offset2" style="height: 100%;">
+        <div class="layui-tab layui-tab-card layui-col-md12 layui-col-sm12 layui-col-xs12">
+            <div class="layui-tab-title layui-col-md12 layui-col-sm12 layui-col-xs12" style="height: 100px">
+                <ul>
+                    <li class="layui-this layui-col-md4 layui-col-sm4 layui-col-xs4" style="height: 100px;line-height: 100px;font-size: 20px">个人注册</li>
+                    <li class="layui-col-md4 layui-col-sm4 layui-col-xs4" style="height: 100px;line-height: 100px;font-size: 20px">团队注册</li>
+                    <li class="layui-col-md4 layui-col-sm4 layui-col-xs4" style="height: 100px;line-height: 100px;font-size: 20px">裁判注册</li>
+                </ul>
+            </div>
+            <div class="layui-tab-content layui-col-md12 layui-col-sm12 layui-col-xs12" style="height: 100%">
+                <div class="layui-tab-item layui-show  layui-col-md10 layui-col-sm12 layui-col-xs12 layui-col-md-offset1" style="height: 600px">
+                    <iframe name="geren" src="gerenzhuce.html" width="100%" height="100%" frameborder="0" ></iframe>
+                </div>
+                <div class="layui-tab-item" style="height: 600px">
+                    <iframe name="tuandui" src="tuanduizhuce.html" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+                <div class="layui-tab-item" style="height: 600px">
+                    <iframe name="caipan" src="caipanzhuce.html" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<iframe name="foot" src="../foot.html" width="100%" height="300px"></iframe>
+<script src="../../static/layui/layui.js"></script>
+<script src="../../static/jquery-1.8.3.min.js"></script>
+<script>
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+</script>
+</body>
+</html>
