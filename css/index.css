@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.ce{
+    z-index: 9999;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+.ce img{
+    position: absolute;
+    right: 0px;
+    top:0px;
+}
+.one{
+    margin: 0 auto;
+}
+.rukou{
+    height: 100px;
+    opacity: 0.8;
+}
+.rukou a{
+    color: #fff9ec;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+}
+.fle{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: -40px;
+}
+.leftone{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #9F9F9F;
+}
+.lie{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E6E6E6;
+    height: 50px;margin-right: 20px;
+}
+.rightone{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #9F9F9F;
+}
+.clear{
+    clear: both;
+    overflow: hidden;
+}
+.fen{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+.new div{
+    height: 150px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+.shun{
+    height: 100px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+.lefttwo{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #9F9F9F;
+}
+.righttwo{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #9F9F9F;
+}
+.fa{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E6E6E6;
+    height: 50px;margin-right: 20px;
+}
+.sheng{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
